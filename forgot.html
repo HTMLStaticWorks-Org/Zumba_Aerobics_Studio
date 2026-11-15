@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Reset Password | Pulse&amp;Motion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ef476f">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+
+<body class="auth-body">
+  <!-- RTL and Theme buttons outside the card at top right corner -->
+  <div class="auth-top-actions">
+    <button class="icon-btn" data-rtl-btn aria-label="Toggle right to left">RTL</button>
+    <button class="icon-btn" data-theme-btn aria-label="Toggle theme">🌙</button>
+  </div>
+
+  <main class="auth-page">
+    <!-- Centered Authentication Card (No images) -->
+    <div class="auth-card">
+      <!-- Brandname inside the card, aligned to center -->
+      <div class="auth-brand-center">
+        <a class="brand" href="home1.html">
+          <span class="brand-mark">✦</span>
+          <span>Pulse<span><b>&amp;</b></span>Motion</span>
+        </a>
+      </div>
+
+      <div class="auth-header">
+        <span class="eyebrow">Account Recovery</span>
+        <h1>Reset Password</h1>
+        <p class="auth-sub">Enter the email associated with your account and we'll send you a recovery link.</p>
+      </div>
+
+      <form data-demo>
+        <div class="field">
+          <label for="recovery-email">Email address</label>
+          <input id="recovery-email" type="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+
+        <!-- Terms and conditions confirmation checkbox -->
+        <div class="auth-terms">
+          <input type="checkbox" id="forgot-terms" name="terms" required>
+          <label for="forgot-terms">I confirm this request complies with <a href="#">Terms of Use</a></label>
+        </div>
+
+        <button class="btn btn-block" type="submit">Send Reset Link →</button>
+        <div class="notice" data-notice hidden>Password reset link generated (demo interaction). Check your inbox.</div>
+      </form>
+
+      <div class="auth-foot">
+        Remembered your credentials? <a href="login.html">Back to sign in</a>
+      </div>
+      <div class="auth-foot" style="margin-top:12px">
+        <a href="home1.html">← Back to website</a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
