@@ -178,6 +178,10 @@ button, input, select, textarea {
   flex-shrink: 0;
 }
 
+.nav-mobile-actions {
+  display: none;
+}
+
 .icon-btn, .menu-btn {
   border: 1px solid var(--line);
   background: var(--surface);
@@ -202,8 +206,9 @@ button, input, select, textarea {
 
 .menu-btn {
   display: none;
-  font-size: 1.15rem;
-  padding: 8px 12px;
+  font-size: 1.25rem;
+  padding: 8px 14px;
+  line-height: 1;
 }
 
 /* BUTTONS */
@@ -1348,27 +1353,53 @@ h3 {
 
 .socials {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin-top: 18px;
+  align-items: center;
 }
 
 .socials a {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
-  border: 1px solid #4a3e4e;
+  border: 1.5px solid var(--line);
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--ink);
+  background: var(--soft);
   font-weight: 800;
-  font-size: 0.88rem;
-  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.socials a svg {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
+  display: block;
 }
 
 .socials a:hover {
   background: var(--brand);
   border-color: var(--brand);
+  color: #ffffff;
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 71, 111, 0.25);
+}
+
+/* In dark footer */
+.footer .socials a {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.footer .socials a:hover {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #ffffff;
 }
 
 .copyright {
@@ -1665,15 +1696,103 @@ h3 {
    RESPONSIVE DESIGN FOR 1024PX, 768PX, MOBILE (Point 18 & 19)
    ========================================================= */
 
-/* 1024px View (Tablet Landscape) */
+/* 1024px View (Tablet & Mobile Hamburger Navigation) */
 @media (max-width: 1024px) {
   .container {
     width: min(calc(100% - 48px), var(--max));
   }
-  .nav-links {
-    gap: 14px;
-    font-size: 0.88rem;
+  
+  /* Hide desktop action buttons (RTL, Theme, Sign In) from navbar header bar */
+  .nav-desktop-action {
+    display: none !important;
   }
+
+  /* Show hamburger button on mobile and tablet view */
+  .menu-btn {
+    display: inline-flex !important;
+  }
+
+  /* Transform nav-links into dropdown drawer under navbar */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    padding: 24px 20px 32px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+  }
+
+  .nav-links a {
+    font-size: 1.05rem;
+    padding: 10px 16px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: var(--soft);
+  }
+
+  .nav-links a.active::after {
+    display: none;
+  }
+
+  /* Keep RTL, Theme and Sign In button properly formatted inside hamburger menu */
+  .nav-mobile-actions {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+
+  .nav-mobile-toggles {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-mobile-toggles .icon-btn {
+    flex: 1;
+    min-height: 44px;
+    font-size: 0.95rem;
+    font-weight: 750;
+    border-radius: 14px;
+    background: var(--soft);
+  }
+
+  .nav-mobile-actions .btn-signin {
+    width: 100%;
+    min-height: 46px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 999px;
+  }
+
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1719,27 +1838,6 @@ h3 {
 @media (max-width: 768px) {
   .container {
     width: min(calc(100% - 36px), var(--max));
-  }
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background: var(--surface);
-    padding: 24px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    border-bottom: 1px solid var(--line);
-    box-shadow: var(--shadow);
-  }
-  .nav-links.open {
-    display: flex;
-  }
-  .menu-btn {
-    display: inline-flex;
   }
   .hero-bg {
     padding: 75px 0 65px;
@@ -1830,10 +1928,6 @@ h3 {
     height: 32px;
     font-size: 1rem;
     border-radius: 10px;
-  }
-  /* Hide desktop signin on small mobile so it never overflows (Point 18) */
-  .nav-actions .btn-signin {
-    display: none;
   }
   .icon-btn, .menu-btn {
     padding: 7px 9px;
