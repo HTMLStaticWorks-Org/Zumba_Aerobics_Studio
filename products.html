@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Products &amp; Studio Gear | Pulse&amp;Motion</title>
+  <title>Studio Products &amp; Gear | Pulse&amp;Motion</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#ef476f">
@@ -34,6 +34,8 @@
         <a href="products.html" class="active">Products</a>
         <a href="gallery.html">Gallery</a>
         <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="dashboard.html">Dashboard</a>
         <a href="contact.html">Contact</a>
       </nav>
 
@@ -48,21 +50,40 @@
   </header>
 
   <main>
-    <!-- Centered Page Hero Section -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumbs">Home / Products &amp; Studio Gear</div>
+    <!-- Page Hero Section with Desktop Background Image & NO Breadcrumbs (Points 7 & 10) -->
+    <section class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1600&q=85');">
+      <div class="container page-hero-center">
         <span class="eyebrow">Studio Pro Shop</span>
         <h1>Aerobics Equipment &amp; Dance Fitness Gear</h1>
         <p class="lead">Gear up with certified studio-grade aerobic step platforms, precision Zumba dance footwear, high-density exercise mats, and cardio resistance accessories designed for maximum energy.</p>
-        
-        <div class="page-hero-banner">
-          <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=85" alt="Aerobic exercise equipment steps resistance bands and studio weights" loading="eager">
+      </div>
+    </section>
+
+    <!-- Point 11: 4-Guarantee Badges Moved DIRECTLY BELOW Hero Section -->
+    <section class="section" style="padding:36px 0 10px">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Studio Tested &amp; Certified</span>
+          </div>
+          <div class="stat">
+            <strong>30-Day</strong>
+            <span>Satisfaction Guarantee</span>
+          </div>
+          <div class="stat">
+            <strong>Fast</strong>
+            <span>Free Express Shipping $50+</span>
+          </div>
+          <div class="stat">
+            <strong>Instant</strong>
+            <span>Studio Front Desk Pickup</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Catalog Section with Interactive Filter Tabs -->
+    <!-- Catalog Section with Interactive Filter Tabs & Responsive Mobile Layout (Point 19) -->
     <section class="section">
       <div class="container">
         <!-- Filter Tabs -->
@@ -73,7 +94,7 @@
           <button class="filter-btn" data-filter="accessories">Footwear &amp; Recovery</button>
         </div>
 
-        <!-- 8 Aerobics Studio Product Cards with Uniform Baseline Button Alignment -->
+        <!-- 8 Aerobics Studio Product Cards (Point 19: Responsive grid on mobile/desktop) -->
         <div class="grid-4">
           <!-- Product 1 -->
           <article class="product-card" data-category="step">
@@ -93,15 +114,15 @@
 
           <!-- Product 2 -->
           <article class="product-card" data-category="accessories">
-            <span class="product-badge">Studio Choice</span>
-            <img class="card-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85" alt="Dance fitness studio sneakers with spin spot" loading="lazy">
+            <span class="product-badge" style="background:#06d6a0">Studio Choice</span>
+            <img class="card-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85" alt="Dance fitness studio sneakers with pivot point" loading="lazy">
             <div class="card-body">
               <span class="pill">Dance Footwear</span>
               <div class="product-rating">★★★★★ <span>(4.9)</span></div>
               <h3>Dance Fit Studio Sneakers</h3>
-              <p>Pivot-point engineered soles with multi-directional grip for effortless Zumba turns and ankle support.</p>
+              <p>Pivot-point engineered soles with multi-directional grip for effortless Zumba turns and lateral support.</p>
               <div class="product-price-row">
-                <div class="product-price">$85.00 <span class="product-orig-price">$110.00</span></div>
+                <div class="product-price">$89.00 <span class="product-orig-price">$110.00</span></div>
               </div>
               <button class="btn" type="button">Add to Cart 🛒</button>
             </div>
@@ -109,13 +130,13 @@
 
           <!-- Product 3 -->
           <article class="product-card" data-category="step">
-            <span class="product-badge">High Grip</span>
-            <img class="card-img" src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=85" alt="Premium thick studio aerobics exercise mat" loading="lazy">
+            <span class="product-badge">Essential</span>
+            <img class="card-img" src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=85" alt="10mm extra-thick shock-absorbing aerobics mat" loading="lazy">
             <div class="card-body">
               <span class="pill">Exercise Mat</span>
               <div class="product-rating">★★★★★ <span>(4.8)</span></div>
-              <h3>Studio Pro Aerobics Mat</h3>
-              <p>10mm high-density eco-friendly TPE foam with moisture-resistant ribbed surface for joint protection.</p>
+              <h3>Studio Pro High-Density Mat</h3>
+              <p>10mm thick eco-friendly foam mat offering superior joint protection and non-slip stability for floor cardio.</p>
               <div class="product-price-row">
                 <div class="product-price">$38.00 <span class="product-orig-price">$48.00</span></div>
               </div>
@@ -125,15 +146,15 @@
 
           <!-- Product 4 -->
           <article class="product-card" data-category="resistance">
-            <span class="product-badge">Popular Set</span>
-            <img class="card-img" src="https://images.unsplash.com/photo-1596357395217-80de13130e92?auto=format&fit=crop&w=800&q=85" alt="Resistance loop exercise workout bands" loading="lazy">
+            <span class="product-badge" style="background:#118ab2">Top Rated</span>
+            <img class="card-img" src="https://images.unsplash.com/photo-1596357395217-80de13130e92?auto=format&fit=crop&w=800&q=85" alt="Aerobic resistance loop bands 5-pack" loading="lazy">
             <div class="card-body">
-              <span class="pill">Resistance</span>
-              <div class="product-rating">★★★★★ <span>(4.9)</span></div>
-              <h3>Aerobic Resistance Loop Bands</h3>
-              <p>Set of 5 color-coded latex exercise bands (Extra Light to Extra Heavy) for glute and leg conditioning.</p>
+              <span class="pill">Resistance Bands</span>
+              <div class="product-rating">★★★★★ <span>(5.0)</span></div>
+              <h3>Aerobic Resistance Loop Set (5-Pk)</h3>
+              <p>Color-coded progressive resistance loops to tone glutes, hips, and shoulders during dance aerobics workouts.</p>
               <div class="product-price-row">
-                <div class="product-price">$22.00 <span class="product-orig-price">$30.00</span></div>
+                <div class="product-price">$24.00 <span class="product-orig-price">$32.00</span></div>
               </div>
               <button class="btn" type="button">Add to Cart 🛒</button>
             </div>
@@ -141,13 +162,13 @@
 
           <!-- Product 5 -->
           <article class="product-card" data-category="resistance">
-            <span class="product-badge">Tone &amp; Sculpt</span>
-            <img class="card-img" src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=85" alt="Zumba aerobics toning dumbbells" loading="lazy">
+            <span class="product-badge">New Arrival</span>
+            <img class="card-img" src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=85" alt="Studio neoprene aerobic dumbbells pair" loading="lazy">
             <div class="card-body">
-              <span class="pill">Toning Weights</span>
-              <div class="product-rating">★★★★★ <span>(5.0)</span></div>
-              <h3>Zumba Toning Sticks (Pair)</h3>
-              <p>1.5 lb maraca-like sand-filled toning dumbbells that shake to the beat while toning arms and shoulders.</p>
+              <span class="pill">Aerobic Weights</span>
+              <div class="product-rating">★★★★★ <span>(4.9)</span></div>
+              <h3>Neoprene Hand Weights (Pair)</h3>
+              <p>Ergonomic anti-slip grip handheld dumbbells (2lb, 3lb, 5lb) for upper-body sculpting during cardio choreo.</p>
               <div class="product-price-row">
                 <div class="product-price">$28.00 <span class="product-orig-price">$35.00</span></div>
               </div>
@@ -156,16 +177,16 @@
           </article>
 
           <!-- Product 6 -->
-          <article class="product-card" data-category="accessories">
-            <span class="product-badge">Cardio Speed</span>
-            <img class="card-img" src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=85" alt="Pro speed cardio jump rope" loading="lazy">
+          <article class="product-card" data-category="resistance">
+            <span class="product-badge" style="background:#ff914d">Popular</span>
+            <img class="card-img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=85" alt="Zumba dance toning maraca sticks" loading="lazy">
             <div class="card-body">
-              <span class="pill">Cardio Gear</span>
+              <span class="pill">Zumba Toning</span>
               <div class="product-rating">★★★★★ <span>(4.9)</span></div>
-              <h3>Cardio Blast Speed Jump Rope</h3>
-              <p>High-speed 360-degree ball bearing jump rope with aluminum knurled handles for rapid footwork.</p>
+              <h3>Rhythm Toning Sticks (Pair)</h3>
+              <p>Filled with shifting beads to create an audible rhythm cue while adding resistance to upper body moves.</p>
               <div class="product-price-row">
-                <div class="product-price">$18.00 <span class="product-orig-price">$25.00</span></div>
+                <div class="product-price">$22.00 <span class="product-orig-price">$29.00</span></div>
               </div>
               <button class="btn" type="button">Add to Cart 🛒</button>
             </div>
@@ -174,14 +195,14 @@
           <!-- Product 7 -->
           <article class="product-card" data-category="accessories">
             <span class="product-badge">Recovery</span>
-            <img class="card-img" src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800&q=85" alt="Foam mobility recovery roller for cardio recovery" loading="lazy">
+            <img class="card-img" src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800&q=85" alt="Deep tissue aerobic muscle recovery roller" loading="lazy">
             <div class="card-body">
-              <span class="pill">Muscle Release</span>
-              <div class="product-rating">★★★★★ <span>(4.8)</span></div>
-              <h3>Aerobic Core &amp; Mobility Roller</h3>
-              <p>Trigger-point textured foam roller engineered for fast muscle decompression and hamstring flexibility.</p>
+              <span class="pill">Muscle Recovery</span>
+              <div class="product-rating">★★★★★ <span>(4.7)</span></div>
+              <h3>Deep-Tissue Mobility Foam Roller</h3>
+              <p>Grid-patterned foam core for fast post-cardio myofascial release, improving muscle elasticity and recovery.</p>
               <div class="product-price-row">
-                <div class="product-price">$32.00 <span class="product-orig-price">$42.00</span></div>
+                <div class="product-price">$32.00 <span class="product-orig-price">$40.00</span></div>
               </div>
               <button class="btn" type="button">Add to Cart 🛒</button>
             </div>
@@ -206,30 +227,6 @@
       </div>
     </section>
 
-    <!-- Studio Quality Guarantee -->
-    <section class="section" style="padding-top:0">
-      <div class="container">
-        <div class="stats">
-          <div class="stat">
-            <strong>100%</strong>
-            <span>Studio Tested &amp; Certified</span>
-          </div>
-          <div class="stat">
-            <strong>30-Day</strong>
-            <span>Satisfaction Guarantee</span>
-          </div>
-          <div class="stat">
-            <strong>Fast</strong>
-            <span>Free Express Shipping $50+</span>
-          </div>
-          <div class="stat">
-            <strong>Instant</strong>
-            <span>Studio Front Desk Pickup</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Properly Aligned CTA Banner -->
     <section class="section" style="padding-top:0">
       <div class="container">
@@ -247,7 +244,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer (Points 4 & 6) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -279,14 +276,26 @@
           <div class="footer-links">
             <a href="about.html">Our story</a>
             <a href="contact.html">Contact</a>
-            <a href="register.html">Membership</a>
+            <a href="membership.html">Membership</a>
+            <a href="dashboard.html">Member dashboard</a>
             <a href="login.html">Member login</a>
           </div>
         </div>
+        <!-- Point 4: Icons for Come move with us -->
         <div>
           <h4>Come move with us</h4>
-          <p>24 Rhythm Avenue<br>Wellness District, CA 90210</p>
-          <p>Mon–Sat · 6 AM–9 PM</p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">📍</span>
+            <span>24 Rhythm Avenue<br>Wellness District, CA 90210</span>
+          </p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">🕒</span>
+            <span>Mon–Sat · 6 AM–9 PM</span>
+          </p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">☎</span>
+            <span>+1 (800) 555-ZUMBA</span>
+          </p>
         </div>
       </div>
       <div class="copyright">
@@ -295,5 +304,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button (Point 5) -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
 </body>
 </html>

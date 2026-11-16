@@ -81,6 +81,122 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Back to Top Button (Point 5)
+  const backToTopBtn = document.querySelector('.back-to-top');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Testimonial Review Slider (Point 3)
+  const slider = document.querySelector('.review-slider-wrap');
+  if (slider) {
+    const slides = slider.querySelectorAll('.review-slide');
+    const dots = slider.querySelectorAll('.slider-dot');
+    const prevBtn = slider.querySelector('[data-slide-prev]');
+    const nextBtn = slider.querySelector('[data-slide-next]');
+    let currentIndex = 0;
+    let autoSlideTimer = null;
+
+    function showSlide(index) {
+      if (!slides.length) return;
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentIndex = index;
+
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentIndex);
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        showSlide(currentIndex - 1);
+        resetAutoSlide();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        showSlide(currentIndex + 1);
+        resetAutoSlide();
+      });
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        showSlide(i);
+        resetAutoSlide();
+      });
+    });
+
+    function startAutoSlide() {
+      autoSlideTimer = setInterval(() => {
+        showSlide(currentIndex + 1);
+      }, 5000);
+    }
+
+    function resetAutoSlide() {
+      if (autoSlideTimer) clearInterval(autoSlideTimer);
+      startAutoSlide();
+    }
+
+    startAutoSlide();
+  }
+
+  // FAQ Accordion Toggle (Point 15)
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const parentItem = btn.closest('.faq-item');
+      if (parentItem) {
+        const isOpen = parentItem.classList.contains('open');
+        // Optional: close other open faq items in the same container
+        const wrap = parentItem.closest('.faq-wrap');
+        if (wrap) {
+          wrap.querySelectorAll('.faq-item.open').forEach(openItem => {
+            if (openItem !== parentItem) openItem.classList.remove('open');
+          });
+        }
+        parentItem.classList.toggle('open', !isOpen);
+      }
+    });
+  });
+
+  // Password Eye Icon Toggle (Point 16)
+  const eyeButtons = document.querySelectorAll('.eye-toggle-btn');
+  eyeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const inputWrap = btn.closest('.field-password-wrap');
+      if (!inputWrap) return;
+      const input = inputWrap.querySelector('input');
+      if (!input) return;
+
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.textContent = '👁️';
+        btn.setAttribute('aria-label', 'Hide password');
+      } else {
+        input.type = 'password';
+        btn.textContent = '🔒';
+        btn.setAttribute('aria-label', 'Show password');
+      }
+    });
+  });
+
   // Demo Forms Handler
   document.querySelectorAll('form[data-demo]').forEach(form => {
     form.addEventListener('submit', e => {

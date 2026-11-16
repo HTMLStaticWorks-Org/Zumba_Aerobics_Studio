@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Member Dashboard | Pulse&amp;Motion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ef476f">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <span>✦ Move more. Feel amazing. Live brighter.</span>
+      <span>☎ +1 (800) 555-ZUMBA &nbsp; · &nbsp; hello@pulseandmotion.com</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">✦</span>
+        <span>Pulse<span><b>&amp;</b></span>Motion</span>
+      </a>
+
+      <!-- Navbar menu options centered -->
+      <nav class="nav-links">
+        <a href="index.html">Home1</a>
+        <a href="home2.html">Home2</a>
+        <a href="classes.html">Classes</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Navbar actions with Sign In button at last -->
+      <div class="nav-actions">
+        <button class="icon-btn" data-rtl-btn aria-label="Toggle right to left">RTL</button>
+        <button class="icon-btn" data-theme-btn aria-label="Toggle theme">🌙</button>
+        <a class="btn btn-small btn-signin" href="login.html">Sign Out</a>
+        <button class="menu-btn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Section with Desktop Background Image -->
+    <section class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1600&q=85');">
+      <div class="container page-hero-center">
+        <span class="eyebrow">Member Portal</span>
+        <h1>Welcome Back, Maya!</h1>
+        <p class="lead">Track your workout milestones, manage upcoming aerobics bookings, and keep your feel-good energy rolling.</p>
+      </div>
+    </section>
+
+    <!-- Dashboard Metrics & Summary -->
+    <section class="section">
+      <div class="container">
+        <div class="stats" style="margin-bottom:36px">
+          <div class="stat">
+            <strong>18</strong>
+            <span>Classes This Month</span>
+          </div>
+          <div class="stat">
+            <strong>14,200</strong>
+            <span>Active Calories Burned</span>
+          </div>
+          <div class="stat">
+            <strong>12 Wks</strong>
+            <span>Current Workout Streak</span>
+          </div>
+          <div class="stat">
+            <strong>2</strong>
+            <span>Guest Passes Remaining</span>
+          </div>
+        </div>
+
+        <div class="split" style="align-items:start;gap:36px">
+          <!-- Left Column: Upcoming Classes & Bookings -->
+          <div>
+            <div class="section-head" style="align-items:start;text-align:left;margin-bottom:24px">
+              <span class="eyebrow">Schedule</span>
+              <h2>Your Upcoming Classes</h2>
+            </div>
+
+            <!-- Booking 1 -->
+            <div class="card card-body" style="margin-bottom:18px">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+                <span class="pill" style="margin-bottom:0">Today · 6:00 PM</span>
+                <span style="color:var(--brand);font-weight:750;font-size:0.9rem">Spot #14 Reserved</span>
+              </div>
+              <h3 style="margin-bottom:6px">Step Aerobics &amp; Cardio Blast</h3>
+              <p style="margin-bottom:14px">Instructor: <b>Marcus Vance</b> · Studio A (Hardwood Floor)</p>
+              <div style="display:flex;gap:12px;flex-wrap:wrap">
+                <button class="btn btn-small" type="button">Check In Code 📱</button>
+                <button class="btn btn-outline btn-small" type="button">Modify Booking</button>
+              </div>
+            </div>
+
+            <!-- Booking 2 -->
+            <div class="card card-body" style="margin-bottom:18px">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+                <span class="pill" style="margin-bottom:0">Wednesday · 7:15 PM</span>
+                <span style="color:var(--brand);font-weight:750;font-size:0.9rem">Spot #8 Reserved</span>
+              </div>
+              <h3 style="margin-bottom:6px">Zumba® Latin Fiesta</h3>
+              <p style="margin-bottom:14px">Instructor: <b>Elena Rostova</b> · Studio Main Hall</p>
+              <div style="display:flex;gap:12px;flex-wrap:wrap">
+                <button class="btn btn-small" type="button">Check In Code 📱</button>
+                <button class="btn btn-outline btn-small" type="button">Modify Booking</button>
+              </div>
+            </div>
+
+            <!-- Booking 3 -->
+            <div class="card card-body">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+                <span class="pill" style="margin-bottom:0">Saturday · 9:00 AM</span>
+                <span style="color:var(--brand);font-weight:750;font-size:0.9rem">Spot #22 Reserved</span>
+              </div>
+              <h3 style="margin-bottom:6px">Weekend Aerobics Celebration</h3>
+              <p style="margin-bottom:14px">Instructor: <b>Sofia Chen</b> · Outdoor Terrace Deck</p>
+              <div style="display:flex;gap:12px;flex-wrap:wrap">
+                <button class="btn btn-small" type="button">Check In Code 📱</button>
+                <button class="btn btn-outline btn-small" type="button">Modify Booking</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Membership Card & Perks -->
+          <div>
+            <div class="section-head" style="align-items:start;text-align:left;margin-bottom:24px">
+              <span class="eyebrow">Plan Details</span>
+              <h2>Your Membership Status</h2>
+            </div>
+
+            <div class="card card-body card-featured" style="margin-bottom:24px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+                <span class="pill" style="background:var(--brand);color:#fff;margin-bottom:0">ACTIVE PLAN</span>
+                <span style="color:var(--muted);font-size:0.88rem">Renews in 14 days</span>
+              </div>
+              <h3 style="font-size:1.6rem;margin-bottom:4px">Unlimited Studio Pass</h3>
+              <div class="price" style="font-size:2rem;margin-bottom:14px">$79 <small>/ month</small></div>
+              <ul class="check-list" style="margin:12px 0 20px">
+                <li>Unlimited access to all 12+ class styles</li>
+                <li>Exclusive locker room reservation (Locker #42)</li>
+                <li>15% discount on studio gear &amp; dance sneakers</li>
+                <li>Complimentary towel &amp; hydration service</li>
+              </ul>
+              <div style="display:flex;gap:12px;flex-wrap:wrap">
+                <a class="btn" href="classes.html">Book Another Class →</a>
+                <a class="btn btn-outline" href="membership.html">Manage Plan</a>
+              </div>
+            </div>
+
+            <!-- Achievement Badges Card -->
+            <div class="card card-body">
+              <h3 style="margin-bottom:14px">Milestone Badges</h3>
+              <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;text-align:center">
+                <div style="padding:12px;background:var(--soft);border-radius:14px">
+                  <div style="font-size:1.8rem;margin-bottom:4px">🔥</div>
+                  <strong style="font-size:0.85rem;display:block">100 Classes</strong>
+                  <span style="font-size:0.75rem;color:var(--muted)">Unlocked</span>
+                </div>
+                <div style="padding:12px;background:var(--soft);border-radius:14px">
+                  <div style="font-size:1.8rem;margin-bottom:4px">💃</div>
+                  <strong style="font-size:0.85rem;display:block">Zumba Master</strong>
+                  <span style="font-size:0.75rem;color:var(--muted)">Unlocked</span>
+                </div>
+                <div style="padding:12px;background:var(--soft);border-radius:14px">
+                  <div style="font-size:1.8rem;margin-bottom:4px">⭐</div>
+                  <strong style="font-size:0.85rem;display:block">Early Bird</strong>
+                  <span style="font-size:0.75rem;color:var(--muted)">Unlocked</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Gear Shop Reorder -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-content">
+            <span class="eyebrow">Studio Gear Member Discount</span>
+            <h2>Enjoy 15% off all aerobic step gear &amp; dance footwear</h2>
+            <p>Your Unlimited membership automatically applies member pricing at checkout in our studio shop.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn" href="products.html">Browse Member Gear →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark">✦</span>
+            <span style="color:#ffffff">Pulse<span><b>&amp;</b></span>Motion</span>
+          </a>
+          <p style="margin-top:18px">A feel-good movement community bringing energy, confidence and connection to every class.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home1</a>
+            <a href="home2.html">Home2</a>
+            <a href="classes.html">Classes</a>
+            <a href="products.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <div class="footer-links">
+            <a href="about.html">Our story</a>
+            <a href="contact.html">Contact</a>
+            <a href="membership.html">Membership</a>
+            <a href="dashboard.html">Member dashboard</a>
+            <a href="login.html">Member login</a>
+          </div>
+        </div>
+        <div>
+          <h4>Come move with us</h4>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">📍</span>
+            <span>24 Rhythm Avenue<br>Wellness District, CA 90210</span>
+          </p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">🕒</span>
+            <span>Mon–Sat · 6 AM–9 PM</span>
+          </p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">☎</span>
+            <span>+1 (800) 555-ZUMBA</span>
+          </p>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2026 Pulse&amp;Motion Studio. All rights reserved.</span>
+        <span>Made for movement, built for everyone.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button (Point 5) -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Contact Us | Pulse&amp;Motion</title>
+  <title>Contact Us | Pulse&amp;Motion - Zumba &amp; Aerobics Studio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#ef476f">
@@ -26,7 +26,7 @@
         <span>Pulse<span><b>&amp;</b></span>Motion</span>
       </a>
 
-      <!-- Navbar menu options centered with Contact strictly at last -->
+      <!-- Navbar menu options centered -->
       <nav class="nav-links">
         <a href="index.html">Home1</a>
         <a href="home2.html">Home2</a>
@@ -34,6 +34,8 @@
         <a href="products.html">Products</a>
         <a href="gallery.html">Gallery</a>
         <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="dashboard.html">Dashboard</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
 
@@ -48,106 +50,106 @@
   </header>
 
   <main>
-    <!-- Centered Page Hero Section -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumbs">Home / Contact</div>
+    <!-- Page Hero Section with Desktop Background Image & NO Breadcrumbs (Points 7 & 10) -->
+    <section class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=1600&q=85');">
+      <div class="container page-hero-center">
         <span class="eyebrow">Let's Connect</span>
         <h1>We'd Love to Hear from You</h1>
         <p class="lead">Questions about classes, studio memberships, intro visits or our aerobic equipment and gear? Drop by our studio or send us a message below.</p>
-        
-        <div class="page-hero-banner">
-          <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=1200&q=85" alt="Bright modern aerobics and dance studio floor" loading="eager">
-        </div>
       </div>
     </section>
 
-    <!-- Contact & Message Section -->
+    <!-- Contact & Message Section (Point 14: Contact badges high contrast in light/dark themes) -->
     <section class="section">
       <div class="container contact-grid">
         <!-- Contact Information Panel -->
         <div class="contact-panel">
           <span class="eyebrow">Visit the Studio</span>
           <h2>Come Say Hello.</h2>
+          
           <div class="contact-item">
-            <span>📍</span>
+            <span class="contact-icon-badge">📍</span>
             <div>
               <b>Studio address</b>
               24 Rhythm Avenue, Wellness District, CA 90210
             </div>
           </div>
+          
           <div class="contact-item">
-            <span>☎</span>
+            <span class="contact-icon-badge">☎</span>
             <div>
               <b>Call us directly</b>
               +1 (800) 555-ZUMBA
             </div>
           </div>
+          
           <div class="contact-item">
-            <span>✉</span>
+            <span class="contact-icon-badge">✉</span>
             <div>
               <b>Email address</b>
               hello@pulseandmotion.com
             </div>
           </div>
+          
           <div class="contact-item">
-            <span>🕒</span>
+            <span class="contact-icon-badge">🕒</span>
             <div>
               <b>Studio operating hours</b>
               Monday–Saturday: 6:00 AM – 9:00 PM<br>Sunday: 8:00 AM – 2:00 PM
             </div>
           </div>
-          
+
           <div class="socials" style="margin-top:24px">
             <a href="#" aria-label="Instagram">ig</a>
             <a href="#" aria-label="Facebook">f</a>
             <a href="#" aria-label="YouTube">▶</a>
             <a href="#" aria-label="TikTok">♪</a>
           </div>
-
-          <iframe class="map-frame" title="Studio location on map" loading="lazy" src="https://www.google.com/maps?q=Los%20Angeles%20California&output=embed"></iframe>
         </div>
 
-        <!-- Message Form Panel -->
-        <div class="form-panel">
-          <span class="eyebrow">Send a Message</span>
-          <h2>How Can We Help?</h2>
+        <!-- Contact Form -->
+        <div class="card card-body">
+          <span class="eyebrow">Drop a Note</span>
+          <h2>Send Us a Message</h2>
+          <p style="margin-bottom:20px;color:var(--muted)">Fill out the form and our studio community coordinator will reply within 24 hours.</p>
+
           <form data-demo>
             <div class="field">
-              <label for="contact-name">Your Full Name</label>
-              <input id="contact-name" type="text" required placeholder="Alex Morgan">
+              <label for="contact-name">Full name</label>
+              <input id="contact-name" type="text" placeholder="Alex Morgan" required>
             </div>
+
             <div class="field">
-              <label for="contact-email">Email Address</label>
-              <input id="contact-email" type="email" required placeholder="alex@example.com">
+              <label for="contact-email">Email address</label>
+              <input id="contact-email" type="email" placeholder="alex@example.com" required>
             </div>
+
             <div class="field">
-              <label for="contact-topic">I'm interested in</label>
-              <select id="contact-topic">
-                <option>Trying a complimentary intro class</option>
-                <option>Membership options &amp; pricing</option>
-                <option>Studio gear &amp; equipment orders</option>
-                <option>Private group session / event</option>
-                <option>General inquiry</option>
+              <label for="contact-interest">I am interested in</label>
+              <select id="contact-interest" style="width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--soft);color:var(--ink);font-size:0.96rem">
+                <option>First-time Free Intro Class</option>
+                <option>Unlimited Studio Membership</option>
+                <option>Zumba &amp; Dance Fitness Classes</option>
+                <option>Step Aerobics &amp; Cardio Conditioning</option>
+                <option>Studio Gear &amp; Equipment Orders</option>
+                <option>Private Group or Corporate Event</option>
               </select>
             </div>
+
             <div class="field">
-              <label for="contact-message">Message</label>
-              <textarea id="contact-message" required placeholder="Tell us how we can help you achieve your goals..."></textarea>
+              <label for="contact-msg">Message</label>
+              <textarea id="contact-msg" rows="4" placeholder="How can we help you move?" required></textarea>
             </div>
-            <div style="margin-top:24px">
-              <button class="btn btn-block" type="submit">Send Message →</button>
-            </div>
-            <div class="notice" data-notice hidden style="margin-top:18px">
-              ✓ Thank you! Your message has been received. Our studio team will respond within 24 hours.
-            </div>
+
+            <button class="btn btn-block" type="submit">Send Message →</button>
+            <div class="notice" data-notice hidden>Thank you for reaching out! Our team has received your message and will respond shortly.</div>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer (Points 4 & 6) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -179,14 +181,26 @@
           <div class="footer-links">
             <a href="about.html">Our story</a>
             <a href="contact.html">Contact</a>
-            <a href="register.html">Membership</a>
+            <a href="membership.html">Membership</a>
+            <a href="dashboard.html">Member dashboard</a>
             <a href="login.html">Member login</a>
           </div>
         </div>
+        <!-- Point 4: Icons for Come move with us -->
         <div>
           <h4>Come move with us</h4>
-          <p>24 Rhythm Avenue<br>Wellness District, CA 90210</p>
-          <p>Mon–Sat · 6 AM–9 PM</p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">📍</span>
+            <span>24 Rhythm Avenue<br>Wellness District, CA 90210</span>
+          </p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">🕒</span>
+            <span>Mon–Sat · 6 AM–9 PM</span>
+          </p>
+          <p class="contact-item" style="margin:8px 0;align-items:center">
+            <span class="contact-icon-badge" style="width:34px;height:34px;font-size:1rem;margin-right:10px">☎</span>
+            <span>+1 (800) 555-ZUMBA</span>
+          </p>
         </div>
       </div>
       <div class="copyright">
@@ -195,5 +209,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button (Point 5) -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
 </body>
 </html>
